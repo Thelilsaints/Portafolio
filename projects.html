@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyectos</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/all.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body >
+
+  <!-- MENÚ SUPERIOR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Portafolio</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#sobre-mi">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Proyectos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- LISTA DE PROYECTOS -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-5">Mis Proyectos</h2>
+      <div class="row g-4">
+
+        <!-- Proyecto 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/Conejo1.JPG" class="card-img-top project-img" alt="Dashboard Admin">
+            <div class="card-body">
+              <h5 class="card-title">CRUD Básico</h5>
+              <p class="card-text">Es un programa que permite crear, leer, actualizar y eliminar información dentro de una base de datos.</p>
+              <button class="btn btn-primary ver-video" data-video="https://www.youtube.com/embed/e726CD-z4AI?list=RDe726CD-z4AI"> Ver Video </button>
+              <br>
+              <br>
+              <a href="https://github.com/Thelilsaints/CRUDHeramientas3" target="_blank">CRUD Básico Github</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/Araña2.JPG" class="card-img-top project-img" alt="Ecommerce">
+            <div class="card-body">
+              <h5 class="card-title">Three Tier Project</h5>
+              <p class="card-text">Es una forma de organizar un programa para que el código sea más ordenado, fácil de mantener y reutilizable</p>
+              <button class="btn btn-primary ver-video" data-video="https://www.youtube.com/embed/3fumBcKC6RE">Ver Video</button>
+              <br>
+              <br>
+              <a href="https://github.com/Thelilsaints/ThreeTierProject" target="_blank" >Three Tier Project en Github</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/Conejo2.JPG" class="card-img-top project-img" alt="Landing SaaS">
+            <div class="card-body">
+              <h5 class="card-title">Formularios</h5>
+              <p class="card-text">Son las ventanas o interfaces que permiten al usuario interactuar con el programa.</p>
+              <button class="btn btn-primary ver-video" data-video="https://www.youtube.com/embed/3fumBcKC6RE">Ver Video</button>
+              <br>
+              <br>
+              <a href="https://github.com/Thelilsaints/TIA1" target="_blank">Formularios Github</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL GENÉRICO -->
+  <div class="modal fade" id="videoModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <div class="ratio ratio-16x9">
+            <iframe id="videoFrame" src="" title="Video Proyecto" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2026 Portafolio Profesional - Ever Cordoba</p>
+    <div class="mt-2">
+      <a href="#" class="social"><i class="bi bi-github"></i></a>
+      <a href="#" class="social"><i class="bi bi-linkedin"></i></a>
+      <a href="#" class="social"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="social"><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+</html>
