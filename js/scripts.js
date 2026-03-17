@@ -29,25 +29,6 @@ $(function(){
       }, 700);
     }
   });
- 
-  
-  // Abrir video en modal
-  $(".ver-video").click(function(){
-
-    let video = $(this).data("video");
-
-    $("#videoFrame").attr("src", video + "?rel=0&autoplay=1");
-
-    let modal = new bootstrap.Modal(document.getElementById("videoModal"));
-    modal.show();
-
-  });
-  
-  // Detener video al cerrar
-  $("#videoModal").on("hidden.bs.modal", function () {
-    $("#videoFrame").attr("src", "");
-  });
-
 
 });
 
@@ -74,3 +55,27 @@ $("#darkMode").click(function () {
   }
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Selecciona todos los botones con clase project-btn
+  const projectButtons = document.querySelectorAll(".project-btn");
+  projectButtons.forEach(btn => {
+    btn.addEventListener("click", function () {
+      const url = btn.getAttribute("data-url");
+      if (url) {
+        window.open(url, "_blank");
+      }
+    });
+  });
+
+  // Selecciona todas las imágenes con clase project-img
+  const projectImages = document.querySelectorAll(".project-img");
+  projectImages.forEach(img => {
+    img.addEventListener("click", function () {
+      const url = img.getAttribute("data-url");
+      if (url) {
+        window.open(url, "_blank");
+      }
+    });
+  });
+});

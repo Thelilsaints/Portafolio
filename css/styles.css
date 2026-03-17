@@ -61,6 +61,13 @@ section h2 {
 }
 
 /* ===== TARJETAS PROYECTOS ===== */
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .card {
   transition: transform .3s ease, box-shadow .3s ease;
 }
@@ -178,4 +185,42 @@ body.dark-mode footer {
   object-fit: contain;
   background: #f8f9fa;
   padding: 10px;
+}
+
+.project-btn {
+  margin-top: auto;
+}
+
+/* ===== HABILIDADES COMO CARDS ===== */
+.skill-card {
+  transition: transform .3s ease, box-shadow .3s ease;
+  border: none;
+  border-radius: 12px;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.skill-card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-card i {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  transition: transform 0.6s ease;
+}
+
+.skill-card:hover i {
+  transform: rotateY(360deg);
+}
+
+.skill-card p {
+  font-weight: bold;
+  margin: 0;
 }
